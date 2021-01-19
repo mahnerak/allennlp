@@ -4,8 +4,8 @@ from allennlp.training.no_op_trainer import NoOpTrainer
 from allennlp.training.trainer import (
     Trainer,
     GradientDescentTrainer,
-    BatchCallback,
-    EpochCallback,
     TrainerCallback,
     TrackEpochCallback,
+    TensorBoardBatchMemoryUsage
 )
+from allennlp.training.callbacks import *
